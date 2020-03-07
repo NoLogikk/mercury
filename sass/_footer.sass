@@ -1,0 +1,31 @@
+.footer
+    background-color: #0e1a35
+.footer__wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 100px
+    padding: 0 10px
+.footer__items
+    display: flex
+.footer_nav
+    display: flex
+    list-style: none
+    li
+        margin-right: 45px
+        a
+            text-decoration: none
+.mar
+    margin: 0 20px
+@media ( max-width:650px)
+    .footer__wrap
+        flex-direction: column
+        justify-content: center
+    .footer__text
+        order: 1
+        margin-top: 10px
+    .footer__items
+        flex-wrap: wrap
+    .footer_nav
+        li
+            margin-right: 12px

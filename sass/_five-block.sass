@@ -1,0 +1,137 @@
+.template__wrap
+    margin-top: 100px
+    p,h1
+        color: black
+.template__text__wrap
+    max-width: 830px
+    margin: 0 auto
+    text-align: center
+    margin: 10px auto
+    padding: 10px
+.template__text
+    font-size: 60px
+    font-family: "Roboto", sans-serif
+    color: rgb(14, 26, 53)
+    font-weight: normal
+.program
+    display: flex
+    justify-content: space-between
+    background: url(../img/png/menu-deg.png) center top no-repeat
+    background-size: contain
+    height: 627px
+    margin-top: 100px
+    padding-bottom: 40px
+.program__text__one
+    max-width: 265px
+    margin-left: 20px
+    margin-top: 50px
+.program__text__two
+    max-width: 265px
+    display: flex
+    align-items: left
+    flex-direction: column
+    justify-content: flex-end
+    margin-bottom: 80px
+    margin-right: 20px
+.program__par
+    font-size: 24px
+    font-family: "Roboto", sans-serif
+    color: rgb(14, 26, 53)
+    font-weight: bold
+    text-align: left
+    margin-bottom: 30px
+    padding-bottom: 10px
+.line
+    content: ""
+    width: 250%
+    border-bottom: 1px solid #5584ff
+    display: block
+    position: relative
+    padding-top: 10px
+    &::after
+        content: ""
+        display: block
+        width: 25px
+        height: 25px
+        background-color: #5584ff
+        right: 0
+        top: -3px
+        position: absolute
+        border-radius: 50%
+    &::before
+        content: ""
+        display: block
+        width: 35px
+        height: 35px
+        opacity: 0.5
+        background-color: #5584ff
+        right: -5px
+        top: -8px
+        position: absolute
+        border-radius: 50%
+.line__two
+    content: ""
+    width: 230%
+    border-bottom: 1px solid #5584ff
+    display: block
+    position: relative
+    display: flex
+    flex-direction: row-reverse
+    transform: rotate(50deg)
+    transform: translateX(-65.5%)
+    padding-top: 10px
+    &::after
+        content: ""
+        display: block
+        width: 25px
+        height: 25px
+        background-color: #5584ff
+        left: 0
+        top: -3px
+        position: absolute
+        border-radius: 50%
+    &::before
+        content: ""
+        display: block
+        width: 35px
+        height: 35px
+        opacity: 0.5
+        background-color: #5584ff
+        left: -5px
+        top: -8px
+        position: absolute
+        border-radius: 50%
+.program__desc
+    font-size: 18px
+    font-family: "Roboto", sans-serif
+    color: rgb(132, 146, 175)
+
+@media screen and (max-width:1024px)
+    .line,
+    .line__two
+        display: none
+    .program__par
+        margin-bottom: 5px;
+    .program
+        justify-content: center
+        align-items: flex-end
+        flex-wrap: wrap
+    .program__text__one 
+        margin-top: 0
+        margin-right: 20px
+    .program__text__two
+        margin-bottom: 0
+        margin-right: 0
+    .template
+        justify-content: center
+        height: 550px
+        margin-top: 100px
+@media screen and (max-width:650px)    
+    .program__text__one
+        margin-top: 230px
+
+
+
+
+
+

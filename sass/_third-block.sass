@@ -1,0 +1,90 @@
+.browser__items
+    display: flex
+    margin-top: 200px
+    margin-bottom: 120px
+.browse__text__wrap
+    width: 50%
+    height: auto
+    display: flex
+    justify-content: flex-end
+    align-items: center
+.browse__text
+    display: flex
+    flex-direction: column
+    margin-left: 20px
+    margin-right: 20px
+.browse__par
+    font-size: 40px
+    font-family: "Myriad Pro", sans-serif
+    color: rgb(14, 26, 53)
+    line-height: 44px
+    text-align: left
+    max-width: 577px
+    margin-bottom: 30px
+.browse__des
+    font-size: 18px
+    font-family: "Roboto", sans-serif
+    color: rgb(132, 146, 175)
+    max-width: 477px
+    margin-bottom: 40px
+.browse_detail
+    font-size: 22px
+    font-family: "Roboto", sans-serif
+    color: rgb(85, 132, 255)
+    line-height: 23px
+    margin-bottom: 30px
+    max-width: 477px
+    display: flex
+    align-items: center
+    span
+        position: relative
+        width: 28px
+        height: 28px
+        border-radius: 50%
+        content: ""
+        border: 1px solid blue
+        display: block
+        margin-right: 15px
+        &::before
+            position: absolute
+            width: 8px
+            height: 3px
+            content: ""
+            display: block
+            border: 2px solid blue
+            top: 36%
+            left: 34%
+            transform: translate(-50%, -50%)
+            transform: rotate(-45deg)
+            border-top: none
+            border-right: none
+.browser__img
+    overflow: hidden
+    width: 50%
+    height: 500px
+    background: url("../img/png/gajets.png") left center no-repeat
+    background-size: cover
+@media ( max-width: 1024px)
+    .browse__text__wrap
+        width: 100%
+        justify-content: center
+    .browser__items
+        flex-direction: column
+        align-items: center
+    .browse__text
+        width: 100%
+        order: 1
+        justify-content: center
+        align-items: center
+        p
+            text-align: left
+    .browse__des
+        max-width: 540px           
+    .browser__img
+        width: 100%
+        order: -1
+        background-size: contain
+@media ( max-width: 600px)        
+    .browser__img
+        height: 260px
+        background-position: center center

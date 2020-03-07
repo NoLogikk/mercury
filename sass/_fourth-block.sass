@@ -1,0 +1,185 @@
+.drop
+    background: url("../img/jpg/bg-2.jpg") center top no-repeat
+    background-size: cover
+    padding-top: 100px
+    padding-bottom: 100px
+    display: flex
+    flex-wrap: wrap
+.drop__wrapp
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    width: 100%
+    margin-bottom: 100px
+.task__wrapp__glob
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+.global__drop__wrap
+    max-width: 450px
+    height: auto
+.progress__text
+    margin-left: 20px
+    margin-bottom: 20px
+    font-size: 24px
+    display: flex
+    line-height: 25px
+    position: relative
+    span
+        color: gray
+        margin-left: 20px
+        &:last-child
+            margin-left: auto
+.arrow
+    content: ""
+    display: block
+    border: 3px solid gray
+    height: 15px
+    width: 15px
+    border-top: none
+    border-left: none
+    transform: rotate(-45deg)
+    top: 50%
+    right : 10px
+    position: absolute
+
+.drop__item__one
+    width: 300px
+    height: 83px
+    background-color: white
+    margin-left: 20px
+    display: flex
+    align-items: center
+    margin-bottom: 10px
+.drop__test
+    width: 40px
+    height: 40px
+    border-radius: 50%
+    background-color: blue
+    position: relative
+    margin-left: 10px
+    span
+        color: white
+        position: absolute
+        left: 50%
+        bottom 50%
+        transform: translate(-50%, 64%)
+.task__text__wrap
+    padding-left: 15px
+.task__par
+    margin-bottom: 5px
+    color: black
+.task__time
+    display: flex
+    align-items: center
+    color: gray
+    span
+        content: ""
+        width: 15px
+        height: 15px
+        border-radius: 50%
+        border: 1px solid gray
+        position: relative
+        margin-right: 5px
+        &::before
+            content: ""
+            position: absolute
+            height: 3px
+            width: 3px
+            display: block
+            border: 1px solid gray
+            border-right: none
+            border-top: none
+            top: 45%
+            left: 55%
+            transform: translate(-50%, -50%)
+.task__complete
+    display: flex
+    align-items: center
+    color: #1ec136
+    span
+        content: ""
+        width: 15px
+        height: 15px
+        border-radius: 50%
+        border: 1px solid green
+        position: relative
+        margin-right: 5px
+        &::before
+            content: ""
+            position: absolute
+            height: 3px
+            width: 3px
+            display: block
+            border: 1px solid green
+            border-right: none
+            border-top: none
+            top: 32%
+            left: 37%
+            transform: translate(-50%, -50%)
+            transform: rotate(-45deg)
+.drop__dot
+    width: 8px
+    height: 8px
+    background-color: gray
+    content: ""
+    display: block
+    border-radius: 50%
+    margin-left: auto
+    margin-right: 5%
+    &::before
+        width: 8px
+        height: 8px
+        background-color: gray
+        content: ""
+        display: block
+        border-radius: 50%
+        margin-left: auto
+        margin-right: 5%
+        transform: translateY(-13px)
+    &::after
+        width: 8px
+        height: 8px
+        background-color: gray
+        content: ""
+        display: block
+        border-radius: 50%
+        margin-left: auto
+        margin-right: 5%
+        transform: translateY(5px)
+.drop__here
+    background-color: inherit
+    margin-left: 20px
+    display: flex
+    align-items: center
+    margin-bottom: 10px  
+    border: 1px dashed gray
+    padding: 32px 113px
+    p
+        color: gray
+.drop__text_wrap
+    width: 40%
+    display: flex
+    justify-content: center
+    margin-left: 10px
+.drop__wrap__wrap
+    max-width: 510px
+    display: flex
+    flex-direction: column
+.drag__text
+    font-size: 60px
+    font-family: "Roboto", sans-serif
+    color: rgb(255, 255, 255)
+    margin-bottom: 30px
+    margin-top: 30px
+.drag__desc
+    font-size: 18px
+    font-family: "Roboto", sans-serif
+    color: rgb(132, 146, 175)
+    margin-bottom: 20px
+    margin-bottom: 30px
+.drag__arrow
+    margin-top: 50px
+@media ( max-width:570px)
+    .drag__desc
+        width: 300px

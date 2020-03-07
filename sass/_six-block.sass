@@ -1,0 +1,103 @@
+.price
+    display: flex
+    justify-content: center
+    align-items: center
+    h1,p,h3,span
+        color: black
+.price__wrap
+    display: flex
+    flex-direction: column
+    align-items: center
+.price__text
+    text-align: center
+.price__items
+    display: flex
+    justify-content: space-around
+    align-items: center
+    flex-wrap: wrap
+.how__much
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 310px
+    height: 450px
+    box-shadow: 0 0 30px 4px rgba(97, 96, 96, 0.137)
+    margin: 25px
+.price__desc
+    max-width: 900px
+    text-align: center
+.price__text
+    font-size: 60px
+    font-family: "Roboto", sans-serif
+    color: rgb(14, 26, 53)
+    font-weight: normal
+.wich__one
+    font-size: 24px
+    font-family: "Roboto", sans-serif
+    color: rgb(14, 26, 53)
+    margin: 48px 0 50px 0
+.how__cost
+    font-size: 72px
+    font-family: "Roboto", sans-serif
+    color: rgb(14, 26, 53)
+    font-weight: bold
+    margin-bottom: 50px
+    &::first-letter
+        font-size: 30px
+        font-family: "Roboto", sans-serif
+        color: rgb(14, 26, 53)
+        font-weight: bold
+    span
+        font-size: 24px
+        font-family: "Roboto", sans-serif
+        color: rgb(132, 146, 175)
+.price__task
+    font-size: 18px
+    font-family: "Roboto", sans-serif
+    color: rgb(132, 146, 175)
+    margin-bottom: 10px
+    display: flex
+    align-items: center
+    span
+       width: 20px
+       height: 20px
+       display: block
+       border-radius: 50%
+       border: 2px solid blue
+       content: "" 
+       margin-right: 5px
+       position: relative
+       &::before
+            position: absolute
+            display: block
+            width: 6px
+            height: 3px
+            content: ""
+            border: 2px solid blue
+            border-top: none
+            border-right: none
+            top: 5px
+            left: 4px
+            transform: rotate(-45deg)
+.price__desc
+    margin: 100px 20px 0 20px
+.join__now
+    padding: 17px 61px
+    background-color: #5584ff
+    border-radius: 28px
+    align-items: center
+    text-decoration: none
+    font-size: 14px
+    font-family: "Roboto", sans-serif
+    color: rgb(255, 255, 255)
+    font-weight: bold
+    margin-top: 60px
+    margin-bottom: 100px
+@media ( max-width:1024px)
+    .price
+        margin-top: 430px
+    .price__text
+        padding-top: 100px
+@media ( max-width:400px)
+    .how__much
+        margin: 0 0 20px 0

@@ -1,3 +1,136 @@
-body 
-    background-color: red
-    
+.header
+    background: url("../img/jpg/menu-bg.jpg") center top no-repeat 
+    background-size: cover
+    padding-top: 90px
+    display: flex
+    flex-direction: column
+    position: relative
+.header__menu
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+    margin: 0 5%
+.logo
+    display: flex
+    align-items: center
+    justify-content: space-between
+.header__logo
+    max-width: 50px
+    max-height: 50px
+    margin-right: 10px
+.header__text
+    font-size: 25px
+    line-height: 28px
+    font-weight: bold
+.test
+    display: none
+    a
+        text-decoration: none
+        color: #5584ff
+.header__menu__wrap
+    list-style: none
+    display: flex
+    flex-wrap: wrap
+.menu__items
+    margin-left: 45px
+    font-size: 18px
+    font-family: "Roboto", sans-serif
+    line-height: 21px
+    a
+        text-decoration: none
+    span
+        a
+            padding: 17px 43px
+            border: 1px solid #233a72
+            border-radius: 30px
+            cursor: pointer
+            color: #354e8b  
+.header__text__wrap 
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    margin-top: 165px
+.header__text1
+    font-size: 60px
+    line-height: 60px
+    font-family: "Roboto", sans-serif
+    font-weight: normal
+    text-align: center
+    margin: 0 0 30px 0
+.header__text2
+    font-size: 36px
+    font-family: "Roboto", sans-serif
+    color: rgb(132, 146, 175)
+    line-height: 42px
+    text-align: center
+    margin-bottom: 85px
+.header__button
+    border: none
+    padding: 16px 55px
+    font-size: 12px
+    font-family: "Roboto", sans-serif
+    font-weight: bold
+    line-height: 14px
+    border-radius: 25px
+    background-color: #5584ff
+    margin-bottom: 550px
+    cursor: pointer
+    &:hover
+        transition: 0.3s
+        background-color: #205df8
+.header__window
+    max-width: 1024px
+    height: auto
+    margin: 0 auto
+    position: absolute
+    left: 50%
+    bottom: -125px
+    transform: translateX(-50%)
+    display: none
+    img
+        display: block
+        max-width: 100%
+        height: auto
+        background-size: contain
+@media ( max-width: 930px )
+    .header
+        padding-top: 40px
+    .header__menu
+        align-items: center
+        flex-direction: column
+        justify-content: center
+    .logo
+        margin: 0 auto 20px
+    .header__text1
+        max-width: 550px
+        margin: 0 10px
+@media ( max-width: 650px )
+    .header__menu
+        justify-content: space-between
+    .logo
+        display: flex
+        margin: 0 0 20px 0
+        justify-content: space-around
+        flex-wrap: wrap
+    .menu__items
+        margin-left: 20px
+        span
+            display: none
+    .test
+        display: flex
+        padding: 17px 43px
+        border: 1px solid #233a72
+        border-radius: 30px
+        cursor: pointer
+        color: #5584ff 
+        margin-left: 20px
+    .header__text1
+        font-size: 40px
+        line-height: 40px
+        margin: 0 0 20px 0
+    .header__text2
+        font-size: 26px
+        line-height: 33px
+        margin-bottom: 50px
